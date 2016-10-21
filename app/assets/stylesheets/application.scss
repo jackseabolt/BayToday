@@ -1,0 +1,118 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+$grey: #bdbdbd;
+$navy: #32406e; 
+$navy_border: #1c243f; 
+
+body {
+	background-color: #e9e9e9;
+}
+
+.icon-bar {
+	background-color: white !important;
+}
+
+.navbar-brand {
+	color: white !important;
+}
+
+.nav_link {
+	color: white !important;
+}
+.nav_link:hover {
+	color: $grey !important;
+}
+.dropdown-toggle {
+	color: white !important;
+}
+
+.banner {
+	width: 100%;
+}
+
+/** Nav Styles **/
+ .collapsed {
+ 	border: 0px; 
+ }
+
+ .card {
+ 	background-color: #e0e0e0 ;
+ 	padding: 20px;
+ 	margin-bottom: 30px;
+ 	border: 1px solid #d4d4d4;
+ }
+.col-sm-6:hover {
+ 	color: black !important;
+ }
+
+ .card:hover {
+ 	color: black !important;
+ }
+
+ .card-topper {
+	overflow:hidden;
+	max-height: 180px;
+ }
+
+.light {
+    font-weight: 100;
+ }
+ .card_image {
+ 	width: 100%;
+ }
+
+ .heavy {
+ 	font-weight: 900;
+ }
+ .headline_sub {
+ 	text-align: center;
+ }
+ .headline_title {
+ 	color: #1b1b1b;
+ 	font-size: 60px;
+ 	font-weight: 900;
+ 	text-align: center;
+ }
+ .headline_container {
+ 	max-height: 500px;
+ 	overflow:hidden;
+ }
+ .headline_img {
+ 	width: 100%;
+ }
+ .navbar {
+ 	background-color: $navy;
+ 	border: $navy_border;
+ 	border-radius: 0px;
+ }
+
+
+ .jumbotron_custom {
+ 	overflow: hidden;
+ 	max-height: 300px;
+ }
+
+
+@media screen and (max-width: 767px) {
+     .card-topper {
+	overflow:hidden;
+	max-height: 280px;
+ 	}
+
+}

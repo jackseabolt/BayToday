@@ -1,0 +1,25 @@
+<div class="row">
+<div class=" col-md-8 col-md-push-2 col-sm-12">
+	<p id="notice"><%= notice %></p>
+	<h1 class="heavy"><%= @post.title %></h1>
+	<h4 class="text-muted"><%= @post.description %></h4>
+	<br />
+	<div>
+		<%= image_tag @post.photo, class: 'banner' %>
+	</div>
+	<br /><br />
+	<p><%= @post.content %></p>
+	<br /><br />
+	<% if user_signed_in? %>
+	<%= link_to 'Edit', edit_post_path(@post) %> |
+	<% end %>
+	<%= link_to 'Back', posts_path %>  
+	<% if user_signed_in? %> 
+	|  <%= link_to 'Delete', post_path(@post), method: :delete, data: {confirm: "Are you sure?"} %> 
+	<% end %>
+	<br />
+	<br />
+	<br />
+	<br />
+</div>
+</div>

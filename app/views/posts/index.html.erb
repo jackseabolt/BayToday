@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-xs-12">
+    <% @posts.each do |p| %>
+      <% if p.level == "headline" %>
+        <a href='/posts/<%= p.slug %>'>
+        <div class="headline_div">
+          <div class="headline_container">
+            <%= image_tag p.photo, class: 'headline_img' %>
+          </div>
+          <h1 class="headline_title"><%= p.title %></h1>
+          <h2 class="text-muted headline_sub"><%= p.description %></h2>
+          <br><br><br><br>
+        </div>
+        </a>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row"> 
+
+
+ 
+    <% @posts.each do |post| %>
+      <% if post.level == "current" %>
+        <a href='/posts/<%= post.slug %>'>
+          <div class='col-sm-6 col-lg-4'>
+            <div class="card">
+              <div class="card-topper">
+                <%= image_tag post.photo, class: 'card_image' %>
+              </div>
+              <div class="card-block">
+               <h4 class="card-title"><%= post.title %></h4>
+                <p class="published-date"><%= post.day_published %></p>
+                <p class="card-text"><%= truncate(post.content, length: 150) %></p>
+                <p class="card-text">The Level: <%= post.level %></p>
+              </div>
+            </div>
+          </div>
+        </a>
+     <% end %>
+    <% end %> 
+
+</div>
+
+
+
+
+
