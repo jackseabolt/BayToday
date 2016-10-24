@@ -24,7 +24,6 @@
 
  
     <% @posts.each do |post| %>
-      <% if post.ranking == "current" %>
         <a class="cancel_link" href='/posts/<%= post.slug %>'>
           <div class='col-sm-6 col-lg-4'>
             <div class="card">
@@ -39,7 +38,6 @@
             </div>
           </div>
         </a>
-     <% end %>
     <% end %> 
 
 </div>
