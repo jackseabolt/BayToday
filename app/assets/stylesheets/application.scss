@@ -16,6 +16,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+$dark_gray: #393939; 
 $grey: #bdbdbd;
 $navy: #32406e; 
 $navy_border: #1c243f; 
@@ -103,10 +104,26 @@ body {
  }
 
 
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: $navy;
+    border: 0px; 
+}
  .jumbotron_custom {
  	overflow: hidden;
  	max-height: 300px;
  }
+
+ .cancel_link {
+ 	color: $dark_gray;
+ }
+ 
+  .cancel_link:hover {
+ 	color: $dark_gray !important;
+ 	text-decoration: none !important;
+ }
+
 
 
 @media screen and (max-width: 767px) {

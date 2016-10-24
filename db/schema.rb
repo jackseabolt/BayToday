@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161024201035) do
+ActiveRecord::Schema.define(version: 20161024220148) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20161024201035) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
-    t.string   "level"
+    t.string   "ranking"
     t.index ["slug"], name: "index_posts_on_slug", unique: true
   end
 
