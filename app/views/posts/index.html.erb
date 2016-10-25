@@ -11,7 +11,7 @@
           </div>
           <h1 class="headline_title"><%= p.title %></h1>
           <h2 class="text-muted headline_sub"><%= p.description %></h2>
-          <br><br><br><br>
+          <br><br>
         </div>
         </a>
       <% end %>
@@ -24,6 +24,7 @@
 
  
     <% @posts.each do |post| %>
+       <% if post.ranking == "today" %>
         <a class="cancel_link" href='/posts/<%= post.slug %>'>
           <div class='col-sm-6 col-lg-4'>
             <div class="card">
@@ -38,6 +39,7 @@
             </div>
           </div>
         </a>
+       <% end %>
     <% end %> 
 
 </div>
