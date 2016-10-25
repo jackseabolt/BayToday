@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'aws-sdk', '~> 2.3'
 gem 'paperclip', '~> 5.1'
 gem 'friendly_id', '~> 5.1.0'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
