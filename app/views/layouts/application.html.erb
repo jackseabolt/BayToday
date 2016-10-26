@@ -17,7 +17,15 @@
     </div>
     <div class="footer">
     <p class="link">
-      <a herf="/pages" class="nav_link">Home</a> | <a herf="#" class="nav_link">About</a> | <a herf="#" class="nav_link">Contact</a> 
+      <a href="/posts" class="nav_link">Home</a> | <a herf="#" class="nav_link">About</a> | <a herf="#" class="nav_link">Contact</a> | 
+      <% if user_signed_in? %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'nav_link' %>
+      <% else %> 
+        <%= link_to "Admin", new_user_session_path, class: 'nav_link' %>
+      <% end %>
+
+
+
 
       <p class="copyright">&copy; 2016 by DemDissent. All right reserved.</p>
       </p> 
