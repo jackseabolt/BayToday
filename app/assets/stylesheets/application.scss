@@ -66,11 +66,14 @@ body {
 
 .navbar-brand {
 	color: white !important;
-	font-size: 20px;
+	font-size: 26px;
+	margin-right: 10px;
 }
 
 .nav_link {
 	color: white !important;
+	font-size: 14px;
+	font-weight: 100;
 }
 .nav_link:hover {
 	color: $grey !important;
@@ -85,7 +88,7 @@ body {
 
 .container {
 	position:relative;
-	min-height: 700px;
+	min-height: 650px;
 	margin-top:0px;
 	margin-bottom:0px;
 }
@@ -152,6 +155,7 @@ body {
  	background-color: black;
  	border: 0px;
  	border-radius: 0px;
+ 	padding: 20px;
  }
 
 
@@ -202,5 +206,16 @@ body {
 	.link {
 		font-size: 16px;
 	}
+  }
+ .navbar-brand {
+	color: white !important;
+	font-size: 20px;
+}
+.navbar {
+ 	padding: 0px;
+ }
+.nav_link {
+	color: white !important;
+	font-size: 12px;
 }
 }
