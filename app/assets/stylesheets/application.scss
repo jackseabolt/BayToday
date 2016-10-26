@@ -23,6 +23,7 @@ $navy_border: #1c243f;
 
 a {
 	text-decoration: none !important;
+	color: white;
 }
 .control-label{
      color: white !important; // some color
@@ -34,8 +35,24 @@ p {
 h1, h2, label {
 	color: white;
 }
-
-
+.footer {
+	background-color: black;
+	color: white;
+	height: 170px;
+	text-align: center;
+	padding-top: 50px;
+	.copyright {
+		font-size: 12px;
+		margin-top: 30px;
+		color: #888888 !important;
+	}
+	.link {
+		font-size: 18px;
+	}
+}
+.white {
+	color: white !important;
+}
 body {
 	background-color: #e9e9e9;
 	background-image: url(http://jackseabolt.com/backgrounddark.jpg);
@@ -167,5 +184,14 @@ body {
 .headline_sub {
 	font-size: 20px !important;
 	line-height: 20px !important;
+}
+.footer {
+	height: 130px;
+	.copyright {
+		display: none;
+	}
+	.link {
+		font-size: 16px;
+	}
 }
 }
