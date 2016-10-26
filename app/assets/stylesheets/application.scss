@@ -131,16 +131,19 @@ body {
 
 
 @media screen and (max-width: 767px) {
-     .card-topper {
+.card-topper {
 	overflow:hidden;
 	max-height: 330px;
- 	}
-
-h1 {
-	font-size: 35px !important;
-	line-height: 35px !important;
 }
-h2 {
+.headline_title {
+ 	color: #1b1b1b;
+ 	font-size: 35px !important;
+	line-height: 35px !important;
+ 	font-weight: 900;
+ 	text-align: center;
+ }
+
+.headline_sub {
 	font-size: 20px !important;
 	line-height: 20px !important;
 }
