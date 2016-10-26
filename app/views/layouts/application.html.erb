@@ -12,12 +12,12 @@
   <body>
   	<%= render 'layouts/nav' %>
     <br>
-  	<div class="container" id="wrapper">
+  	<div class="container">
     	<%= yield %>
     </div>
-    <div class="footer" id="footer">
+    <div class="footer">
     <p class="link">
-      <a href="/posts" class="nav_link">Home</a> | <a herf="#" class="nav_link">About</a> | <a herf="#" class="nav_link">Contact</a> | 
+      <a href="/posts" class="nav_link">Home</a> | <%= link_to "About", pages_about_path, class: 'nav_link' %> | <%= link_to "Contact", pages_contact_path, class: 'nav_link' %> | 
       <% if user_signed_in? %>
         <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'nav_link' %>
       <% else %> 
