@@ -21,7 +21,9 @@ $grey: #bdbdbd;
 $navy: #32406e; 
 $navy_border: #1c243f; 
 
-
+a {
+	text-decoration: none !important;
+}
 
 p { 
 	color: white !important; 
