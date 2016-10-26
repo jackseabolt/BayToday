@@ -17,10 +17,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li> <a href="#" class="nav_link">Home <span class="sr-only">(current)</span></a></li>
-        <li> <a href="#" class="nav_link">Election 2016 <span class="sr-only">(current)</span></a></li>
-        <li><a href="#" class="nav_link">Policy<span class="sr-only">(current)</span></a></li>
-        <li><a href="#" class="nav_link">About<span class="sr-only">(current)</span></a></li>
+        <li> <a href="/posts" class="nav_link">Home <span class="sr-only">(current)</span></a></li>
+        <li> <%= link_to "Election 2016", pages_election2016_path, class: 'nav_link' %></li>
+        <li><%= link_to "Policy", pages_policy_path, class: 'nav_link' %></li>
+        <li><%= link_to "About", pages_about_path, class: 'nav_link' %></li>
       </ul>
 
 
