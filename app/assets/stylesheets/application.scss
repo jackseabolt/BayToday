@@ -23,7 +23,7 @@ $navy_border: #1c243f;
 
 a {
 	text-decoration: none !important;
-	color: white;
+	color: #fff;
 }
 .control-label{
      color: white !important; // some color
@@ -84,7 +84,8 @@ body {
 }
 
 .container {
-	min-height: 100%;
+	position:relative;
+	min-height: 700px;
 	margin-top:0px;
 	margin-bottom:0px;
 }
