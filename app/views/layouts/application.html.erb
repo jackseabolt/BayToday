@@ -12,10 +12,10 @@
   <body>
   	<%= render 'layouts/nav' %>
     <br>
-  	<div class="container">
+  	<div class="container" id="wrapper">
     	<%= yield %>
     </div>
-    <div class="footer">
+    <div class="footer" id="footer">
     <p class="link">
       <a href="/posts" class="nav_link">Home</a> | <a herf="#" class="nav_link">About</a> | <a herf="#" class="nav_link">Contact</a> | 
       <% if user_signed_in? %>
