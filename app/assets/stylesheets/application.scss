@@ -192,6 +192,14 @@ body {
 	color: white;
 }
 
+.white_blue {
+	color: white;
+}
+
+.white_blue:hover {
+	color: #7c98f5;
+}
+
 @media screen and (max-width: 991px) {
 	.sidebarouter {
 			display: none !important;
