@@ -113,6 +113,14 @@ body {
 .col-sm-6:hover {
  	color: black !important;
  }
+.cancel_link {
+ 	color: $dark_gray;
+}
+ 
+.cancel_link:hover {
+ 	color: $dark_gray !important;
+ 	text-decoration: none !important;
+}
 
  .card:hover {
  	color: black !important;
@@ -170,52 +178,62 @@ body {
  	max-height: 300px;
  }
 
- .cancel_link {
- 	color: $dark_gray;
- }
- 
-  .cancel_link:hover {
- 	color: $dark_gray !important;
- 	text-decoration: none !important;
- }
+.sidebar {
+	background-color: #363636;
+	padding: 20px;
+}
 
+.sidebarouter {
+	margin-top: 118px;
+	
+}
+
+.white {
+	color: white;
+}
+
+@media screen and (max-width: 991px) {
+	.sidebarouter {
+			display: none !important;
+		}
+}
 
 
 @media screen and (max-width: 767px) {
-.card-topper {
-	overflow:hidden;
-	max-height: 350px;
-}
-.headline_title {
- 	color: white;
- 	font-size: 35px !important;
-	line-height: 35px !important;
- 	font-weight: 900;
- 	text-align: center;
- }
+	.card-topper {
+		overflow:hidden;
+		max-height: 350px;
+	}
+	.headline_title {
+	 	color: white;
+	 	font-size: 35px !important;
+		line-height: 35px !important;
+	 	font-weight: 900;
+	 	text-align: center;
+	 }
 
-.headline_sub {
-	font-size: 20px !important;
-	line-height: 20px !important;
-}
-.footer {
-	height: 130px;
-	.copyright {
-		display: none;
+	.headline_sub {
+		font-size: 20px !important;
+		line-height: 20px !important;
 	}
-	.link {
-		font-size: 16px;
+	.footer {
+		height: 130px;
+		.copyright {
+			display: none;
+		}
+		.link {
+			font-size: 16px;
+		}
+	  }
+	 .navbar-brand {
+		color: white !important;
+		font-size: 20px;
 	}
-  }
- .navbar-brand {
-	color: white !important;
-	font-size: 20px;
-}
-.navbar {
- 	padding: 0px;
- }
-.nav_link {
-	color: white !important;
-	font-size: 12px;
-}
+	.navbar {
+	 	padding: 0px;
+	 }
+	.nav_link {
+		color: white !important;
+		font-size: 12px;
+	}
 }

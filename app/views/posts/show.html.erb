@@ -1,25 +1,39 @@
 <div class="row">
-<div class=" col-md-8 col-md-push-2 col-sm-12">
-	<p id="notice"><%= notice %></p>
-	<h1 class="heavy"><%= @post.title %></h1>
-	<h4 class="text-muted"><%= @post.description %></h4>
-	<br />
-	<div>
-		<%= image_tag @post.photo, class: 'banner' %>
+	<div class=" col-md-8 col-sm-12">
+		<p id="notice"><%= notice %></p>
+		<h1 class="heavy"><%= @post.title %></h1>
+		<h4 class="text-muted"><%= @post.description %></h4>
+		<br />
+		<div>
+			<%= image_tag @post.photo, class: 'banner' %>
+		</div>
+		<br /><br />
+		<p><%= @post.content %></p>
+		<br /><br />
+		<% if user_signed_in? %>
+		<%= link_to 'Edit', edit_post_path(@post), class: 'white' %> |
+		<% end %>
+		<%= link_to 'Back', posts_path, class: 'white' %>  
+		<% if user_signed_in? %> 
+		|  <%= link_to 'Delete', post_path(@post), method: :delete, data: {confirm: "Are you sure?"}, class: 'white' %> 
+		<% end %>
+		<br />
+		<br />
+		<br />
+		<br />
 	</div>
-	<br /><br />
-	<p><%= @post.content %></p>
-	<br /><br />
-	<% if user_signed_in? %>
-	<%= link_to 'Edit', edit_post_path(@post), class: 'white' %> |
-	<% end %>
-	<%= link_to 'Back', posts_path, class: 'white' %>  
-	<% if user_signed_in? %> 
-	|  <%= link_to 'Delete', post_path(@post), method: :delete, data: {confirm: "Are you sure?"}, class: 'white' %> 
-	<% end %>
-	<br />
-	<br />
-	<br />
-	<br />
-</div>
+	<div class="col-sm-0 col-md-4 sidebarouter">
+		<div class="col-md-11 col-md-push-1 sidebar">
+		<h2 class="heavy">Other Stories</h2>
+		<br />
+		<% @posts.each do |p| %>
+			<a href='/posts/<%= p.slug %>'>
+				<% if p.ranking == "today" %>
+				<h5 class="white"><%= p.title %></h5>
+				<hr>
+				<% end %>
+			</a>
+		<% end %>
+		</div>
+	</div>
 </div>
