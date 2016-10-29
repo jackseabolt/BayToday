@@ -11,6 +11,7 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require social-share-button
  *= require_self
  */
  @import "bootstrap-sprockets";
@@ -20,6 +21,10 @@ $dark_gray: #393939;
 $grey: #bdbdbd;
 $navy: #32406e; 
 $navy_border: #1c243f; 
+
+
+
+
 
 a {
 	text-decoration: none !important;
@@ -39,6 +44,7 @@ p {
 h1, h2, label {
 	color: white;
 }
+
 .footer {
 	width: 100%; 
 	background-color: black;

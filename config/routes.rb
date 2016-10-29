@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
+  get 'homes/show'
+
   devise_for :users
   resources :posts
 
+
+  resources :homes, only: [:show]
+  root to: "homes#show"
+  
   get "pages/policy" => "pages#policy"
   get "pages/contact" => "pages#contact"
   get "pages/about" => "pages#about"

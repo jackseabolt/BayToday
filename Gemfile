@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'social-share-button', '~> 0.1.6'
 gem 'aws-sdk', '~> 2.3'
 gem 'paperclip', '~> 5.1'
 gem 'friendly_id', '~> 5.1.0'

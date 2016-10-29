@@ -9,15 +9,17 @@
 		</div>
 		<br /><br />
 		<p class="date"><%= @post.day_published %></p>
+
+		<%= social_share_button_tag("My Site") %>
+
+
+		<br />
+
 		<p><%= @post.content %></p>
 		<br /><br />
 		<% if user_signed_in? %>
-		<%= link_to 'Edit', edit_post_path(@post), class: 'white' %> |
-		<% end %>
-		<%= link_to 'Back', posts_path, class: 'white' %>  
-		<% if user_signed_in? %> 
-		|  <%= link_to 'Delete', post_path(@post), method: :delete, data: {confirm: "Are you sure?"}, class: 'white' %> 
-		<% end %>
+		<%= link_to 'Edit', edit_post_path(@post), class: 'white' %> | <%= link_to 'Delete', post_path(@post), method: :delete, data: {confirm: "Are you sure?"}, class: 'white' %> 
+		<% end %> 
 		<br />
 		<br />
 		<br />
