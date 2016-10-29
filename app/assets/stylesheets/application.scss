@@ -25,13 +25,17 @@ a {
 	text-decoration: none !important;
 	color: #fff;
 }
+
 .control-label{
      color: white !important; // some color
 }
 p { 
 	color: white !important; 
 }
-
+.date {
+	color: #777777 !important;
+	font-style: italic; 
+}
 h1, h2, label {
 	color: white;
 }
@@ -191,7 +195,9 @@ body {
 .white {
 	color: white;
 }
-
+.white:hover {
+	background-color: none;
+}
 .white_blue {
 	color: white;
 }

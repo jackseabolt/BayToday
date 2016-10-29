@@ -21,6 +21,9 @@
         <li> <%= link_to "Election 2016", pages_election2016_path, class: 'nav_link' %></li>
         <li><%= link_to "Policy", pages_policy_path, class: 'nav_link' %></li>
         <li><%= link_to "About", pages_about_path, class: 'nav_link' %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to "New Post", new_post_path, class: 'nav_link' %></li>
+        <% end %>
       </ul>
 
 

@@ -5,13 +5,13 @@
       <%= f.input :title, class: 'form-control' %>
   </div>
   <div class="field">
-    <%= f.input :content, class: 'form-control' %>
+    <%= f.input :content, class: 'form-control', :as => :text %>
   </div>
   <div class="field">
-    <%= f.input :description, class: 'form-control' %>
+    <%= f.input :description, class: 'form-control', :as => :text %>
   </div>
   <div class="field">
-    <%= f.input :ranking, class: 'form-control' %>
+    <%= f.input :ranking, :collection => ['today','headline','policy', 'election 2016'] %>
   </div>
   <div class="actions">
     <%= f.label :photo %> 

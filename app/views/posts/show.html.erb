@@ -8,6 +8,7 @@
 			<%= image_tag @post.photo, class: 'banner' %>
 		</div>
 		<br /><br />
+		<p class="date"><%= @post.day_published %></p>
 		<p><%= @post.content %></p>
 		<br /><br />
 		<% if user_signed_in? %>
