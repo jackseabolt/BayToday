@@ -182,7 +182,35 @@ p {
 }
 .sidebarouter {
 	margin-top: 168px;
-	
+}
+.social_container {
+	width: 35px;
+	height: 35px;
+	background-color: #393939;
+	border-radius: 17.5px;
+	margin-top: 7px;
+	margin-left: 10px;
+
+}	
+#social_facebook {
+	margin-top: 8px;
+	margin-left: 10px;
+    color: white;
+}
+#social_twitter {
+	margin-top: 8px;
+	margin-left: 9px;
+    color: white;
+}
+#social_google {
+	margin-top: 8px;
+	margin-left: 8px;
+    color: white;
+}
+#social_pinterest {
+	margin-top: 8px;
+	margin-left: 10px;
+    color: white;
 }
 .white {
 	color: white !important;
@@ -242,5 +270,8 @@ p {
 	.nav_link {
 		color: white !important;
 		font-size: 12px;
+	}
+	.social_container {
+		display: none;
 	}
 }
