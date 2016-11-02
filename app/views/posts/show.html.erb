@@ -1,6 +1,5 @@
 <div class="row">
 	<div class=" col-md-8 col-sm-12">
-		<p id="notice"><%= notice %></p>
 		<h1 class="heavy"><%= @post.title %></h1>
 		<h4 class="text-muted"><%= @post.description %></h4>
 		<p class="date"><%= @post.day_published %></p>
@@ -23,13 +22,16 @@
 	</div>
 	<div class="col-sm-0 col-md-4 sidebarouter">
 		<div class="col-md-11 col-md-push-1 sidebar">
-		<h2 class="heavy">Other Stories</h2>
-		<br />
+			<div class="sidebar_head_container">
+				<h4 class="sidebar_header text-center">Other Stories</h4>
+			</div>
 		<% @posts.each do |p| %>
 			<a href='/posts/<%= p.slug %>'>
-				<% if p.ranking == "today" %>
-				<h5 class="white_green"><%= p.title %></h5>
-				<hr>
+				<% if p.ranking == "today" && p.title != @post.title %>
+				<div class="photo_div">
+					<%= image_tag p.photo, class: "photo_small" %>
+					<h5 class="white_green"><%= p.title %></h5>
+				</div>
 				<% end %>
 			</a>
 		<% end %>

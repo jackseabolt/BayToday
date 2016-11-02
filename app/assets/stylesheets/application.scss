@@ -168,13 +168,26 @@ p {
     background-color: black;
     border: 0px; 
 }
+.photo_small {
+	width: 100px;
+	height: 75px;
+	margin-right: 10px;
+	margin-left: 10px;
+	float: left;
+}
+.photo_div {
+	background-color: none;
+	overflow:auto; 
+	margin-bottom: 30px;
+}
 .jumbotron_custom {
  	overflow: hidden;
  	max-height: 300px;
 }
 .sidebar {
-	background-color: #363636;
+	background-color: #2f2f2f;
 	padding: 20px;
+	margin-bottom: 60px;
 }
 .sidebar2 {
 	background-color: #363636;
@@ -184,6 +197,20 @@ p {
 .sidebarouter {
 	margin-top: 168px;
 }
+.sidebar_header {
+	color: white;
+}
+.sidebar_head_container {
+	background-color: black;
+	padding: 10px;
+	width: 160px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	position: relative;
+	top: -20px;
+}
+
 .social_container {
 	width: 35px;
 	height: 35px;
