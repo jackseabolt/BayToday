@@ -16,3 +16,40 @@
 //= require turbolinks
 //= require social-share-button
 //= require_tree .
+
+$(document).ready(function(){
+
+	$('#facebook').hover(
+	    function(){
+	        $(this).animate({'backgroundColor': '#404a87'},400);
+	    },
+	    function(){
+	        $(this).animate({'backgroundColor': '#393939'},400);
+	    }
+	);
+	$('#twitter').hover(
+	    function(){
+	        $(this).animate({'backgroundColor': '#6bb2d0'},400);
+	    },
+	    function(){
+	        $(this).animate({'backgroundColor': '#393939'},400);
+	    }
+	);
+	$('#google').hover(
+	    function(){
+	        $(this).animate({'backgroundColor': '#cb3939'},400);
+	    },
+	    function(){
+	        $(this).animate({'backgroundColor': '#393939'},400);
+	    }
+	);
+	$('#pinterest').hover(
+	    function(){
+	        $(this).animate({'backgroundColor': '#cb3939'},400);
+	    },
+	    function(){
+	        $(this).animate({'backgroundColor': '#393939'},400);
+	    }
+	);
+
+});
