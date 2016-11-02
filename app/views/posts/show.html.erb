@@ -3,25 +3,21 @@
 		<p id="notice"><%= notice %></p>
 		<h1 class="heavy"><%= @post.title %></h1>
 		<h4 class="text-muted"><%= @post.description %></h4>
+		<p class="date"><%= @post.day_published %></p>
+
+		<%= social_share_button_tag("My Site") %>
 		<br />
 		<div>
 			<%= image_tag @post.photo, class: 'banner' %>
 		</div>
-		<br /><br />
-		<p class="date"><%= @post.day_published %></p>
-
-		<%= social_share_button_tag("My Site") %>
-
-
 		<br />
-
+		<p class="date"><%= @post.caption %></p>
+		<br />
 		<p><%= @post.content %></p>
 		<br /><br />
 		<% if user_signed_in? %>
 		<%= link_to 'Edit', edit_post_path(@post), class: 'white' %> | <%= link_to 'Delete', post_path(@post), method: :delete, data: {confirm: "Are you sure?"}, class: 'white' %> 
 		<% end %> 
-		<br />
-		<br />
 		<br />
 		<br />
 	</div>
@@ -32,7 +28,7 @@
 		<% @posts.each do |p| %>
 			<a href='/posts/<%= p.slug %>'>
 				<% if p.ranking == "today" %>
-				<h5 class="white_blue"><%= p.title %></h5>
+				<h5 class="white_green"><%= p.title %></h5>
 				<hr>
 				<% end %>
 			</a>

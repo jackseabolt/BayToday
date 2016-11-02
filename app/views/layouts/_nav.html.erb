@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class='navbar-brand' href='/'>
-      <span style="color: #7c98f5">Dem</span><span class='light'>Dissent</span>
+      <span style="color: #7c98f5">Bay</span><span class='light'>Today</span>
     </a>
       
     </div>
@@ -19,7 +19,7 @@
       <ul class="nav navbar-nav">
         <li> <a href="/posts" class="nav_link">Home <span class="sr-only">(current)</span></a></li>
         <li> <%= link_to "Election 2016", pages_election2016_path, class: 'nav_link' %></li>
-        <li><%= link_to "Policy", pages_policy_path, class: 'nav_link' %></li>
+        <li><%= link_to "Local", posts_local_path, class: 'nav_link' %></li>
         <li><%= link_to "About", pages_about_path, class: 'nav_link' %></li>
         <% if user_signed_in? %>
           <li><%= link_to "New Post", new_post_path, class: 'nav_link' %></li>

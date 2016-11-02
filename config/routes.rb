@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   resources :homes, only: [:show]
 
-  get "pages/policy" => "pages#policy"
+  get "posts/local" => "posts#local"
   get "pages/contact" => "pages#contact"
   get "pages/about" => "pages#about"
   get "pages/election2016" => "pages#election2016"

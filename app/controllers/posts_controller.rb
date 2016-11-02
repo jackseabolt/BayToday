@@ -8,6 +8,10 @@ class PostsController < ApplicationController
     @posts = Post.most_recent
   end
 
+  def local
+   
+  end 
+
   # GET /posts/1
   # GET /posts/1.json
   def show
@@ -63,6 +67,7 @@ class PostsController < ApplicationController
     end
   end
 
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -71,6 +76,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :content, :description, :photo, :ranking, :photo_file_name)
+      params.require(:post).permit(:title, :content, :description, :photo, :ranking, :photo_file_name, :caption)
     end
 end

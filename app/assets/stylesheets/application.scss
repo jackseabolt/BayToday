@@ -21,7 +21,7 @@ $dark_gray: #393939;
 $grey: #bdbdbd;
 $navy: #32406e; 
 $navy_border: #1c243f; 
-
+$blue: #7c98f5; 
 
 
 
@@ -30,80 +30,29 @@ a {
 	text-decoration: none !important;
 	color: #fff;
 }
-
-.control-label{
-     color: white !important; // some color
-}
-p { 
-	color: white !important; 
-}
-.date {
-	color: #777777 !important;
-	font-style: italic; 
-}
-h1, h2, label {
-	color: white;
-}
-
-.footer {
-	width: 100%; 
-	background-color: black;
-	color: white;
-	height: 170px;
-	text-align: center;
-	padding-top: 50px;
-	margin-top: 30px;
-	.copyright {
-		font-size: 12px;
-		margin-top: 30px;
-		color: #888888 !important;
-	}
-	.link {
-		font-size: 18px;
-	}
-}
-.white {
-	color: white !important;
-}
 body {
 	background-color: #e9e9e9;
 	background-image: url(http://jackseabolt.com/backgrounddark.jpg);
 }
-
-.icon-bar {
-	background-color: white !important;
+h1, h2, label {
+	color: white;
 }
-
-.navbar-brand {
-	color: white !important;
-	font-size: 26px;
-	margin-right: 10px;
+p { 
+	color: white !important; 
 }
-
-.nav_link {
-	color: white !important;
-	font-size: 14px;
-	font-weight: 100;
-}
-.nav_link:hover {
-	color: $grey !important;
-}
-.dropdown-toggle {
-	color: white !important;
-}
-
 .banner {
 	width: 100%;
 }
 
+.control-label{
+     color: white !important; // some color
+}
 .container {
 	position:relative;
 	min-height: 650px;
 	margin-top:0px;
 	margin-bottom:0px;
 }
-
-/** Nav Styles **/
  .collapsed {
  	border: 0px; 
  }
@@ -135,81 +84,119 @@ body {
  .card:hover {
  	color: black !important;
  }
-
+ .card_image {
+ 	width: 100%;
+ }
  .card-topper {
 	overflow:hidden;
 	max-height: 180px;
  }
-
-.light {
-    font-weight: 100;
+ .dropdown-toggle {
+	color: white !important;
  }
- .card_image {
- 	width: 100%;
- }
-
- .heavy {
+.date {
+	color: #777777 !important;
+	font-style: italic; 
+}
+.footer {
+	width: 100%; 
+	background-color: black;
+	color: white;
+	height: 170px;
+	text-align: center;
+	padding-top: 50px;
+	margin-top: 30px;
+	.copyright {
+		font-size: 12px;
+		margin-top: 30px;
+		color: #888888 !important;
+	}
+	.link {
+		font-size: 18px;
+	}
+}
+.heavy {
  	font-weight: 900;
  	color: white;
  }
- .headline_sub {
+.headline_sub {
  	color: #a4a4a4;
  	text-align: center;
  }
- .headline_title {
+.headline_title {
  	color: white;
  	font-size: 60px;
  	font-weight: 900;
  	text-align: center;
  }
- .headline_container {
+.headline_container {
  	max-height: 500px;
  	overflow:hidden;
  }
- .headline_img {
+.headline_img {
  	width: 100%;
  }
- .navbar {
+.icon-bar {
+	background-color: white !important;
+}
+.light {
+    font-weight: 100;
+ }
+.navbar-brand {
+	color: white !important;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.nav_link {
+	color: white !important;
+	font-size: 14px;
+	font-weight: 100;
+}
+.nav_link:hover {
+	color: $grey !important;
+}
+.navbar {
  	background-color: black;
  	border: 0px;
  	border-radius: 0px;
  	padding: 20px;
  }
-
-
-
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     background-color: black;
     border: 0px; 
 }
- .jumbotron_custom {
+.jumbotron_custom {
  	overflow: hidden;
  	max-height: 300px;
- }
-
+}
 .sidebar {
 	background-color: #363636;
 	padding: 20px;
 }
-
+.sidebar2 {
+	background-color: #363636;
+	padding: 20px;
+	margin-top: 40px;
+}
 .sidebarouter {
-	margin-top: 118px;
+	margin-top: 168px;
 	
 }
-
 .white {
-	color: white;
+	color: white !important;
 }
+
 .white:hover {
 	background-color: none;
 }
-.white_blue {
+.white_green {
 	color: white;
 }
 
-.white_blue:hover {
-	color: #7c98f5;
+.white_green:hover {
+	color: $blue;
 }
 
 @media screen and (max-width: 991px) {

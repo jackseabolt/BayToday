@@ -2,8 +2,9 @@
 
 <div class="row">
   <div class="col-xs-12">
+    <% x = 0 %>
     <% @posts.each do |p| %>
-      <% if p.ranking == "headline" %>
+      <% if (p.ranking == "headline") && (x<5) %>
         <a href='/posts/<%= p.slug %>'>
         <div class="headline_div">
           <div class="headline_container">
@@ -14,6 +15,8 @@
           <br><br>
         </div>
         </a>
+        <% puts x %>
+        <% x = x+1 %>
       <% end %>
     <% end %>
   </div>

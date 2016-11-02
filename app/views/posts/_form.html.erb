@@ -11,13 +11,16 @@
     <%= f.input :description, class: 'form-control', :as => :text %>
   </div>
   <div class="field">
-    <%= f.input :ranking, :collection => ['today','headline','policy', 'election 2016'] %>
+    <%= f.input :ranking, collection: ['today','headline','local','headline local' 'election 2016', 'headline election 2016', 'record'] %>
   </div>
   <div class="actions">
     <%= f.label :photo %> 
     <%= f.file_field :photo %>
-    <br />
   </div> 
+   <div class="field">
+    <%= f.input :caption, class: 'form-control' %>
+  </div>
+  <br />
   <div class="actions">
     <%= f.button :submit, :class => 'btn btn-success' %>
   </div> 
