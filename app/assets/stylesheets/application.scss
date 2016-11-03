@@ -184,6 +184,9 @@ p {
  	overflow: hidden;
  	max-height: 300px;
 }
+.section_header {
+	font-size: 30px;
+}
 .sidebar {
 	background-color: #2f2f2f;
 	padding: 20px;
@@ -258,6 +261,10 @@ p {
 	.sidebarouter {
 			display: none !important;
 		}
+
+	.section_header {
+		font-size: 25px;
+	}
 }
 
 
@@ -297,6 +304,9 @@ p {
 	.nav_link {
 		color: white !important;
 		font-size: 12px;
+	}
+	.section_header {
+		font-size: 20px;
 	}
 	.social_container {
 		display: none;
