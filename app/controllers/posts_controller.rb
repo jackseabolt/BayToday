@@ -19,7 +19,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-     
+    @posts = Post.most_recent
   end
 
   # GET /posts/new
