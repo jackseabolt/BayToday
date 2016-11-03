@@ -16,6 +16,10 @@ class PostsController < ApplicationController
     @posts = Post.most_recent
   end 
 
+  def database
+    @posts = Post.most_recent
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show

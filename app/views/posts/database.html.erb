@@ -1,0 +1,28 @@
+<div class="row">
+	<div class="col-xs-10 col-xs-push-1">
+		<h1 class="section_header">Database</h1>
+		<hr class="break">
+		<br />
+		<div class="white_background">
+			<table class="table table-hover table-striped">
+				<thead>
+				<tr>
+					<th>Title</th>
+					<th>Publication Date</th>
+					<th>Status</th>
+				</tr>
+				</thead>
+				<tbody>
+				<% @posts.each do |post| %>
+				<tr class='clickable-row' data-href='<%= post.slug %>/'>
+						<td><%= post.title %></td>
+						<td><%= post.day_published %></td>
+						<td><%= post.ranking %></td> 
+					</tr></a>
+				<% end %> 
+				</tbody>
+			</table>
+		</div>
+		<br /><br />
+	</div>
+</div>

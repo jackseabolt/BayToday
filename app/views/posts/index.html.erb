@@ -2,7 +2,6 @@
 
 <div class="row">
   <div class="col-xs-12">
-    <% x = 0 %>
     <% @posts.each do |p| %>
       <% if (p.ranking == "headline") && (x<5) %>
         <a href='/posts/<%= p.slug %>'>
@@ -15,8 +14,6 @@
           <br><br>
         </div>
         </a>
-        <% puts x %>
-        <% x = x+1 %>
       <% end %>
     <% end %>
   </div>
@@ -28,7 +25,7 @@
  
     <% @posts.each do |post| %>
        <% if post.ranking == "today" %>
-        <a class="cancel_link" href='/posts/<%= post.slug %>'>
+        <a class="cancel_link" href='/posts/<%= post.slug %>/'>
           <div class='col-sm-6 col-lg-4'>
             <div class="card">
               <div class="card-topper">
