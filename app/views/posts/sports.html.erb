@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-xs-12">
   	<h1 class="section_header">Sports News</h1>
-	<hr /><br />
+	<hr class="break" /><br />
     <% @posts.each do |p| %>
       <% if p.ranking == "headline sports"%>
         <a href='/posts/<%= p.slug %>'>

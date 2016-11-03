@@ -44,7 +44,9 @@ p {
 .banner {
 	width: 100%;
 }
-
+.break {
+	margin-top: 10px !important;
+	}
 .control-label{
      color: white !important; // some color
 }
@@ -186,6 +188,7 @@ p {
 }
 .section_header {
 	font-size: 30px;
+	display: inline;
 }
 .sidebar {
 	background-color: #2f2f2f;
@@ -269,6 +272,10 @@ p {
 
 
 @media screen and (max-width: 767px) {
+	
+	.break {
+	margin-top: 5px !important;
+	}
 	.card-topper {
 		overflow:hidden;
 		max-height: 350px;
