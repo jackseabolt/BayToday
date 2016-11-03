@@ -4,7 +4,7 @@
   	<h1>Sports News</h1>
 	<hr /><br />
     <% @posts.each do |p| %>
-      <% if p.ranking == "headline"%>
+      <% if p.ranking == "headline sports"%>
         <a href='/posts/<%= p.slug %>'>
         <div class="headline_div">
           <div class="headline_container">
@@ -24,7 +24,7 @@
 
  
     <% @posts.each do |post| %>
-       <% if post.ranking == "today" %>
+       <% if post.ranking == "sports" %>
         <a class="cancel_link" href='/posts/<%= post.slug %>'>
           <div class='col-sm-6 col-lg-4'>
             <div class="card">
