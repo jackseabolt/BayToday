@@ -1,13 +1,11 @@
 Rails.application.routes.draw do
   get 'homes/show'
-
+  get 'posts/local_news', to: "posts#local_news"
+  get 'posts/sports', to: "posts#sports"
   devise_for :users
   resources :posts
-
-
   resources :homes, only: [:show]
 
-  get "posts/local" => "posts#local"
   get "pages/contact" => "pages#contact"
   get "pages/about" => "pages#about"
   get "pages/election2016" => "pages#election2016"

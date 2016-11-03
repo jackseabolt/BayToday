@@ -17,7 +17,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-$dark_gray: #393939; 
+$dark_gray: #2f2f2f; 
 $grey: #bdbdbd;
 $navy: #32406e; 
 $navy_border: #1c243f; 
@@ -170,7 +170,7 @@ p {
 }
 .photo_small {
 	width: 100px;
-	height: 75px;
+	height: 70px;
 	margin-right: 10px;
 	margin-left: 10px;
 	float: left;
@@ -235,8 +235,8 @@ p {
     color: white;
 }
 #social_pinterest {
-	margin-top: 8px;
-	margin-left: 10px;
+	margin-top: 9px;
+	margin-left: 11px;
     color: white;
 }
 .white {
@@ -301,4 +301,5 @@ p {
 	.social_container {
 		display: none;
 	}
+	
 }
