@@ -53,16 +53,13 @@ $(document).on('turbolinks:load', function(){
 	    }
 	);
 
-	function($) {
-    	$(".clickable-row").click(function() {
-    	    window.document.location = $(this).data("href");
-    });
+	
 	
 
 
 });
 
-jQuery(document).ready(function($) {
+$(document).on('turbolinks:load', function($) {
     $(".clickable-row").click(function() {
         window.document.location = $(this).data("href");
     });
