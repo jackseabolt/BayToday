@@ -10,6 +10,7 @@
 					<th>Title</th>
 					<th>Publication Date</th>
 					<th>Status</th>
+					<th></th>
 				</tr>
 				</thead>
 				<tbody>
@@ -17,7 +18,8 @@
 				<tr class='clickable-row' data-href='<%= post.slug %>/'>
 						<td><%= post.title %></td>
 						<td><%= post.day_published %></td>
-						<td><%= post.ranking %></td> 
+						<td><%= post.ranking %></td>
+						<td><a class="show_link" href='/posts/<%= post.slug %>/'>view</a></td> 
 					</tr></a>
 				<% end %> 
 				</tbody>

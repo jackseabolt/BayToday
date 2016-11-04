@@ -53,14 +53,8 @@ $(document).on('turbolinks:load', function(){
 	    }
 	);
 
+});	
 	
-	
 
 
-});
 
-$(document).on('turbolinks:load', function($) {
-    $(".clickable-row").click(function() {
-        window.document.location = $(this).data("href");
-    });
-});
