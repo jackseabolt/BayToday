@@ -12,7 +12,7 @@
 		<br />
 		<p class="date"><%= @post.caption %></p>
 		<br />
-		<p><%= @post.content %></p>
+		<p><%= simple_format(@post.content) %></p>
 		<br /><br />
 		<% if user_signed_in? %>
 		<%= link_to 'Edit', edit_post_path(@post), class: 'white' %> | <%= link_to 'Delete', post_path(@post), method: :delete, data: {confirm: "Are you sure?"}, class: 'white' %> 
