@@ -18,7 +18,7 @@
 //= require social-share-button
 //= require_tree .
 
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(){
 
 	$('#facebook').hover(
 	    function(){
