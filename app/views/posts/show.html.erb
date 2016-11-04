@@ -4,7 +4,7 @@
 		<h4 class="text-muted"><%= @post.description %></h4>
 		<p class="date"><%= @post.day_published %></p>
 
-		<%= social_share_button_tag(@post.title) %>
+		<%= social_share_button_tag(@post.title, image: @post.photo) %>
 		<br />
 		<div>
 			<%= image_tag @post.photo, class: 'banner' %>
