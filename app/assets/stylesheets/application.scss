@@ -224,6 +224,11 @@ text-align: left;
 	overflow:auto; 
 	margin-bottom: 30px;
 }
+.profile_picture {
+	margin-top: 15px;
+	width: 90%;
+	border-radius: 50%;
+}
 .jumbotron_custom {
  	overflow: hidden;
  	max-height: 300px;
@@ -231,6 +236,9 @@ text-align: left;
 .section_header {
 	font-size: 30px;
 	display: inline;
+}
+.section_subheader {
+	color: $grey;
 }
 .show_link {
 	color: #303b61 !important;
