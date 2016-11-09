@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get '/contacts', to: 'contacts#new'
+  resources "contacts", only: [:new, :create]
   get 'homes/show'
   get 'posts/local_news', to: "posts#local_news"
   get 'posts/sports', to: "posts#sports"

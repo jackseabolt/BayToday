@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'mail_form'
 gem 'jquery-turbolinks'
 gem 'social-share-button', '~> 0.1.6'
 gem 'aws-sdk', '~> 2.3'

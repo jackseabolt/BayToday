@@ -2,7 +2,7 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
-    <title>BayToday</title>
+  <title><%= yield(:page_title) %> | BayToday</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -20,7 +20,7 @@
     </div>
     <div class="footer">
     <p class="link">
-      <a href="/posts" class="nav_link">Home</a> | <%= link_to "About", pages_about_path, class: 'nav_link' %> | <%= link_to "Contact", pages_contact_path, class: 'nav_link' %> | 
+      <a href="/posts" class="nav_link">Home</a> | <%= link_to "About", pages_about_path, class: 'nav_link' %> | <%= link_to "Contact", new_contact_path, class: 'nav_link' %> | 
       <% if user_signed_in? %>
         <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'nav_link' %> | 
         <%= link_to "New Post", new_post_path, class: 'nav_link' %> | <%= link_to "Database", posts_database_path, class: 'nav_link' %>
@@ -31,7 +31,7 @@
 
 
 
-      <p class="copyright">&copy; 2016 by DemDissent. All right reserved.</p>
+      <p class="copyright">&copy; 2016 by BayToday. All right reserved.</p>
       </p> 
     </div>
   </body>
