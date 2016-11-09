@@ -229,6 +229,9 @@ text-align: left;
 	width: 90%;
 	border-radius: 50%;
 }
+.profile_content_right {
+	text-align: right;
+}
 .jumbotron_custom {
  	overflow: hidden;
  	max-height: 300px;
@@ -329,6 +332,15 @@ text-align: left;
 
 	.section_header {
 		font-size: 25px;
+	}
+	.profile_content_right {
+		text-align: left;
+	}
+	.profile_picture {
+		margin-top: 15px;
+		margin-bottom: 10px;
+		width: 200px;
+		border-radius: 50%;
 	}
 }
 
