@@ -226,7 +226,7 @@ text-align: left;
 }
 .profile_picture {
 	margin-top: 15px;
-	width: 90%;
+	width: 200px;
 	border-radius: 50%;
 }
 .profile_content_right {
@@ -274,6 +274,8 @@ text-align: left;
 	width: 160px;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative; 
+	right: 25px;
 	margin-bottom: 20px;
 	position: relative;
 	top: -20px;
@@ -329,7 +331,6 @@ text-align: left;
 	.sidebarouter {
 			display: none !important;
 		}
-
 	.section_header {
 		font-size: 25px;
 	}
