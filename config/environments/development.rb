@@ -1,4 +1,22 @@
 Rails.application.configure do
+  
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :port => "587",
+    :domain => "mydomain.net",
+    :user_name => "seaboltmarketing@gmail.com",
+    :password => "7Testing",
+    :authentication => "plain",
+    :enable_starttls_auto => true
+  } 
+
+
   # Settings specified here will take precedence over those in config/application.rb.
   Paperclip.options[:command_path] = "/usr/local/bin/"
   # In the development environment your application's code is reloaded on
@@ -26,17 +44,7 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
   #Jack's added settings
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address: 'smtp.gmail.com',
-    port: 587,
-    domain: 'gmail.com',
-    user_name: 'jackseabolt@gmail.com',
-    password: '7Highland',
-    authentication: 'plain',
-    enable_starttls_auto: true 
-  }
+  
   config.action_mailer.perform_deliveries = true
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false

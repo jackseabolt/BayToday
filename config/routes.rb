@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  resource :contact_forms
+  
+
   get 'contact', to: 'messages#new', as: 'contact'
   post 'contact', to: 'messages#create'
   get '/contacts', to: 'contacts#new'
