@@ -24,6 +24,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @posts = Post.most_recent
+    @sidebar = Post.where(ranking: "local").limit(2)
   end
 
   # GET /posts/new
