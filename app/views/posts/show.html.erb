@@ -43,7 +43,7 @@
 				<h4 class="sidebar_header text-center">Local News</h4>
 			</div>
 				<% @sidebar.each do |s| %> 
-					<a href='/posts/<%= p.slug %>'>
+					<a href='/posts/<%= s.slug %>'>
 						<% if p.title != @post.title %>
 							<div class="photo_div">
 								<%= image_tag p.photo, class: "photo_small" %>
