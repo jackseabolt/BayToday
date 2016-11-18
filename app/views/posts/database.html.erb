@@ -1,3 +1,5 @@
+<% provide(:page_title, "Database") %>
+
 <div class="row">
 	<div class="col-xs-10 col-xs-push-1">
 		<h1 class="section_header">Database</h1>
@@ -16,7 +18,7 @@
 				<tbody>
 				<% @posts.each do |post| %>
 				<tr class='clickable-row' data-href='<%= post.slug %>/'>
-						<td><%= post.title %></td>
+						<td><%= truncate(post.title, length: 30) %></td>
 						<td><%= post.day_published %></td>
 						<td><%= post.ranking %></td>
 						<td><a class="show_link" href='/posts/<%= post.slug %>/'>view</a></td> 

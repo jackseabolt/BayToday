@@ -22,6 +22,7 @@ $grey: #bdbdbd;
 $navy: #32406e; 
 $navy_border: #1c243f; 
 $blue: #7c98f5; 
+$blue_hover: #6070a8;
 
 
 
@@ -77,6 +78,18 @@ text-align: left;
 .break {
 	margin-top: 10px !important;
 	}
+.btn-custom {
+	background-color: $blue !important;
+	color: white; 
+	border: 1px solid $blue; 
+
+}
+.btn-custom:hover {
+	background-color: $blue_hover !important;
+	color: white; 
+	border: 0px; 
+	border: 1px solid $blue_hover; 
+}
 .control-label{
      color: white !important; // some color
 }

@@ -1,3 +1,5 @@
+<% provide(:page_title, "Contact") %>
+
 <div class="row">
 	<div class="col-md-8 col-md-push-2 col-sm-12">
 		<h3>Contact Us</h3>
@@ -7,7 +9,7 @@
 		    <%= f.input :email, :required => false %>
 		    <%= f.input :message, :required => false %>
 		    <br />
-		    <%= f.button :submit, 'Send message' %>
+		    <%= f.button :submit, 'Send message', class: "btn btn-custom" %>
 		 <% end %> 
 	</div>
 </div>

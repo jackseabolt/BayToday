@@ -15,14 +15,14 @@
   </div>
   <div class="actions">
     <%= f.label :photo %> 
-    <%= f.file_field :photo %>
+    <%= f.file_field :photo, class: "white"  %>
   </div> 
    <div class="field">
     <%= f.input :caption, class: 'form-control' %>
   </div>
   <br />
   <div class="actions">
-    <%= f.button :submit, :class => 'btn btn-success' %>
+    <%= f.button :submit, :class => 'btn btn-custom' %>
   </div> 
 <% end %>
 
