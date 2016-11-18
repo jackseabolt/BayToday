@@ -38,5 +38,22 @@
 			</a>
 		<% end %>
 		</div>
+		<div class="col-md-11 col-md-push-1 sidebar2">
+			<div class="sidebar_head_container">
+				<h4 class="sidebar_header text-center">Local News</h4>
+			</div>
+		<% @posts.first(2).each do |p| %>
+			<a href='/posts/<%= p.slug %>'>
+				<% if p.ranking == "local" %>
+					<% if p.title != @post.title %>
+						<div class="photo_div">
+							<%= image_tag p.photo, class: "photo_small" %>
+							<h5 class="white_green"><%= p.title %></h5>
+						</div>
+					<% end %>
+				<% end %>
+			</a>
+		<% end %>
+		</div>
 	</div>
 </div>
