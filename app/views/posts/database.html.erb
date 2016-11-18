@@ -10,7 +10,6 @@
 				<thead>
 				<tr>
 					<th>Title</th>
-					<th>Publication Date</th>
 					<th>Status</th>
 					<th></th>
 				</tr>
@@ -19,7 +18,6 @@
 				<% @posts.each do |post| %>
 				<tr class='clickable-row' data-href='<%= post.slug %>/'>
 						<td><%= truncate(post.title, length: 30) %></td>
-						<td><%= post.day_published %></td>
 						<td><%= post.ranking %></td>
 						<td><a class="show_link" href='/posts/<%= post.slug %>/'>view</a></td> 
 					</tr></a>
